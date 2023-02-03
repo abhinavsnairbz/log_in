@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
+import 'package:log_in/constants/colors.dart';
+import 'package:log_in/constants/strings.dart';
+import '../loginScreen/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -26,12 +28,15 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: AppColor.primarycolor,
       body: Center(
         child: Text(
-          'W E L C O M E',
+          AppString.splashWelcome,
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontSize: 20,
+          ),
         ),
       ),
     );

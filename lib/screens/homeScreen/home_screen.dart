@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:log_in/constants/colors.dart';
+import 'package:log_in/constants/strings.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -21,12 +23,12 @@ class HomeScreen extends StatelessWidget {
           height: ksize.height * 0.1,
           width: ksize.width * 0.9,
           decoration: BoxDecoration(
-            color: Colors.blueGrey,
+            color: AppColor.primarycolor,
             borderRadius: BorderRadius.circular(10)
           ),
           child: const Center(
             child: Text(
-              'Hi, Welcome to Home Screen...',
+              AppString.homeString,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
